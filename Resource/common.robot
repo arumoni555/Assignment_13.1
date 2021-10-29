@@ -27,11 +27,6 @@ User adds the item to the cart
     sleep  2s
     Capture Page Screenshot  sc2.png
     Close Window
-    
-# User views the item added in the cart
-#     Click Element  ${cart_button}
-#     sleep  1s
-#     Capture Page Screenshot  sc3.png
 
 Terminate browser
     Close Browser

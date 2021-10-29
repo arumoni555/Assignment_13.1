@@ -9,7 +9,6 @@ Observe user is able to test sanity flow
     Then User searches for electronics section and select a catogory
     Then User selects a desired item
     Then User adds the item to the cart
-    # And User views the item added in the cart
     [Teardown]  And Terminate browser
 
 
