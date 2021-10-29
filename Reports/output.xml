@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.8.8 on win32)" generated="20210909 20:22:04.128" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\user\Documents\Assignment7.2\Tests">
+<suite id="s1-s1" name="Testcase" source="C:\Users\user\Documents\Assignment7.2\Tests\testcase.robot">
+<test id="s1-s1-t1" name="Observe user is able to test sanity flow">
+<kw name="Given User Launch browser for flipkart" library="common">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210909 20:22:04.541" level="INFO">Opening browser 'gc' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20210909 20:22:04.541" endtime="20210909 20:22:11.470"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210909 20:22:11.471" endtime="20210909 20:22:11.476"/>
+</kw>
+<status status="PASS" starttime="20210909 20:22:04.540" endtime="20210909 20:22:11.476"/>
+</kw>
+<kw name="Then User enters login credentials" library="common">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210909 20:22:11.478" endtime="20210909 20:22:11.478"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${login_No}</arg>
+<arg>9535560951</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:11.479" level="INFO">Typing text '9535560951' into text field 'Xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20210909 20:22:11.478" endtime="20210909 20:22:14.658"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${login_password}</arg>
+<arg>monishri</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:14.658" level="INFO">Typing password into text field 'Xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<msg timestamp="20210909 20:22:16.712" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210909 20:22:17.819" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210909 20:22:14.658" endtime="20210909 20:22:17.819"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${click_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:17.819" level="INFO">Clicking button 'Xpath=/html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button'.</msg>
+<status status="PASS" starttime="20210909 20:22:17.819" endtime="20210909 20:22:23.001"/>
+</kw>
+<status status="PASS" starttime="20210909 20:22:11.477" endtime="20210909 20:22:23.002"/>
+</kw>
+<kw name="Then User searches for electronics section and select a catogory" library="common">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${select_Catogory}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210909 20:22:23.006" level="INFO">Simulating Mouse Over on element 'Xpath=/html/body/div/div/div[2]/div/div/div[5]'.</msg>
+<status status="PASS" starttime="20210909 20:22:23.005" endtime="20210909 20:22:26.317"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${select_Dropdown}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20210909 20:22:26.318" level="INFO">Simulating Mouse Over on element 'Xpath=/html/body/div/div/div[2]/div/div/div[5]/a/div[2]/div[2]'.</msg>
+<status status="PASS" starttime="20210909 20:22:26.317" endtime="20210909 20:22:28.639"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_Subcatogory}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:28.639" level="INFO">Clicking element 'Xpath=/html/body/div/div/div[2]/div/div/div[5]/a/div[2]/div[2]/div[2]/div/div/div[1]/a[2]'.</msg>
+<status status="PASS" starttime="20210909 20:22:28.639" endtime="20210909 20:22:30.790"/>
+</kw>
+<status status="PASS" starttime="20210909 20:22:23.003" endtime="20210909 20:22:30.790"/>
+</kw>
+<kw name="Then User selects a desired item" library="common">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search_bar}</arg>
+<arg>canon cameras</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:30.792" level="INFO">Typing text 'canon cameras' into text field 'Xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[2]/form/div/div/input'.</msg>
+<status status="PASS" starttime="20210909 20:22:30.791" endtime="20210909 20:22:34.184"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:34.186" level="INFO">Clicking button 'Xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[2]/form/div/button'.</msg>
+<status status="PASS" starttime="20210909 20:22:34.185" endtime="20210909 20:22:39.387"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${select_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:39.388" level="INFO">Clicking element 'Xpath=/html/body/div/div/div[3]/div[1]/div[2]/div[2]/div/div/div/a'.</msg>
+<status status="PASS" starttime="20210909 20:22:39.387" endtime="20210909 20:22:41.566"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>sc1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210909 20:22:42.793" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="sc1.png"&gt;&lt;img src="sc1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210909 20:22:41.566" endtime="20210909 20:22:42.794"/>
+</kw>
+<status status="PASS" starttime="20210909 20:22:30.791" endtime="20210909 20:22:42.795"/>
+</kw>
+<kw name="Then User adds the item to the cart" library="common">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handle}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210909 20:22:42.799" endtime="20210909 20:22:46.852"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210909 20:22:48.854" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210909 20:22:46.853" endtime="20210909 20:22:48.854"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${add_to_cart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:48.855" level="INFO">Clicking button 'Xpath=/html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button'.</msg>
+<status status="PASS" starttime="20210909 20:22:48.854" endtime="20210909 20:22:54.062"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210909 20:22:56.063" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210909 20:22:54.062" endtime="20210909 20:22:56.063"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>sc2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210909 20:22:57.227" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="sc2.png"&gt;&lt;img src="sc2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210909 20:22:56.064" endtime="20210909 20:22:57.228"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20210909 20:22:57.228" endtime="20210909 20:22:58.336"/>
+</kw>
+<status status="PASS" starttime="20210909 20:22:42.797" endtime="20210909 20:22:58.338"/>
+</kw>
+<kw name="And User views the item added in the cart" library="common">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${cart_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210909 20:22:58.340" level="INFO">Clicking element 'Xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[5]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210909 20:22:58.348" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.63)
+</msg>
+<status status="FAIL" starttime="20210909 20:22:58.341" endtime="20210909 20:22:58.348"/>
+</kw>
+<msg timestamp="20210909 20:22:58.348" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.63)
+</msg>
+<msg timestamp="20210909 20:22:58.354" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.63)
+</msg>
+<status status="FAIL" starttime="20210909 20:22:58.339" endtime="20210909 20:22:58.354"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210909 20:22:58.355" endtime="20210909 20:22:58.355"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>sc3.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20210909 20:22:58.355" endtime="20210909 20:22:58.355"/>
+</kw>
+<status status="FAIL" starttime="20210909 20:22:58.339" endtime="20210909 20:22:58.356"/>
+</kw>
+<kw name="And Terminate browser" library="common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210909 20:22:58.358" endtime="20210909 20:23:02.965"/>
+</kw>
+<status status="PASS" starttime="20210909 20:22:58.358" endtime="20210909 20:23:02.965"/>
+</kw>
+<tag>sanity</tag>
+<status status="FAIL" starttime="20210909 20:22:04.539" endtime="20210909 20:23:02.965">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.63)
+</status>
+</test>
+<status status="FAIL" starttime="20210909 20:22:04.182" endtime="20210909 20:23:02.970"/>
+</suite>
+<status status="FAIL" starttime="20210909 20:22:04.131" endtime="20210909 20:23:02.976"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Testcase">Tests.Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210909 20:22:58.348" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=93.0.4577.63)
+</msg>
+</errors>
+</robot>
